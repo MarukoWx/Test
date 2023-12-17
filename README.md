@@ -724,7 +724,7 @@ function library:Window(text,text2,text3,logo,keybind)
 				callback()
 			end)
 		end
-		function main:Toggle(text,config,callback)
+		function main:Toggle(text,img,config,callback)
 			config = config or false
 			local toggled = config
 			local Toggle = Instance.new("Frame")
