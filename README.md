@@ -749,7 +749,7 @@ function library:Window(text,text2,text3,logo,keybind)
 
 			Button.Name = "Button"
 			Button.Parent = Toggle
-			Button.BackgroundColor3 = _G.ColorButton
+			Button.BackgroundColor3 = _G.Color
 			Button.Position = UDim2.new(0, 1, 0, 1)
 			Button.Size = UDim2.new(0, 468, 0, 29)
 			Button.AutoButtonColor = false
@@ -850,7 +850,7 @@ function library:Window(text,text2,text3,logo,keybind)
 
 			Dropdown.Name = "Dropdown"
 			Dropdown.Parent = MainFramePage
-			Dropdown.BackgroundColor3 = _G.ColorButton
+			Dropdown.BackgroundColor3 = _G.Color
 			Dropdown.ClipsDescendants = true
 			Dropdown.Size = UDim2.new(0, 470, 0, 31)
 
@@ -1071,7 +1071,7 @@ function library:Window(text,text2,text3,logo,keybind)
 
 			sliderr.Name = "sliderr"
 			sliderr.Parent = Slider
-			sliderr.BackgroundColor3 = _G.ColorButton
+			sliderr.BackgroundColor3 = _G.Color
 			sliderr.Position = UDim2.new(0, 1, 0, 1)
 			sliderr.Size = UDim2.new(0, 468, 0, 49)
 
@@ -1270,7 +1270,7 @@ function library:Window(text,text2,text3,logo,keybind)
 
 			Textboxx.Name = "Textboxx"
 			Textboxx.Parent = Textbox
-			Textboxx.BackgroundColor3 = _G.ColorButton
+			Textboxx.BackgroundColor3 = _G.Color
 			Textboxx.Position = UDim2.new(0, 1, 0, 1)
 			Textboxx.Size = UDim2.new(0, 468, 0, 29)
 
