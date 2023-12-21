@@ -2463,7 +2463,7 @@ spawn(function()
 		pcall(function()
 			if _G.Bring_Mob then
 				for i,v in pairs(game.Workspace.Enemies:GetChildren()) do
-					if _G.Auto_Farm_Level and BringMobFarm and v.Name == QuestCheck()[3] and (v.HumanoidRootPart.Position - PosMon.Position).Magnitude <= 225 and v:FindFirstChild("Humanoid") and v:FindFirstChild("HumanoidRootPart") and v.Humanoid.Health > 0 then	
+					if _G.Auto_Farm_Level and BringMobFarm and string.find(v.Name,QuestCheck()[3]) and (v.HumanoidRootPart.Position - PosMon.Position).Magnitude <= 225 and v:FindFirstChild("Humanoid") and v:FindFirstChild("HumanoidRootPart") and v.Humanoid.Health > 0 then	
 						getgenv().ToTarget(v.HumanoidRootPart.CFrame == PosMon)
 						v.HumanoidRootPart.CanCollide = false
 						v.HumanoidRootPart.Size = Vector3.new(50, 50, 50)
@@ -2540,7 +2540,7 @@ spawn(function()
 							v.Humanoid.Animator:Destroy()
 						end
 						sethiddenproperty(game:GetService("Players").LocalPlayer, "SimulationRadius", math.huge)
-					elseif v.Name == "Factory Staff [Lv. 800]" and (v.HumanoidRootPart.Position - PosMonMasteryGun.Position).Magnitude <= 225 and v:FindFirstChild("Humanoid") and v:FindFirstChild("HumanoidRootPart") and v.Humanoid.Health > 0 then
+					elseif _G.Auto_Farm_Gun_Mastery and v.Name == "Factory Staff [Lv. 800]" and (v.HumanoidRootPart.Position - PosMonMasteryGun.Position).Magnitude <= 225 and v:FindFirstChild("Humanoid") and v:FindFirstChild("HumanoidRootPart") and v.Humanoid.Health > 0 then
 						v.HumanoidRootPart.Size = Vector3.new(50,50,50)
 						v.Humanoid:ChangeState(14)
 						v.HumanoidRootPart.CanCollide = false
@@ -2550,7 +2550,7 @@ spawn(function()
 							v.Humanoid.Animator:Destroy()
 						end
 						sethiddenproperty(game:GetService("Players").LocalPlayer, "SimulationRadius", math.huge)
-					elseif v.Name == QuestCheck()[3] and (v.HumanoidRootPart.Position - PosMonMasteryGun.Position).Magnitude <= 225 and v:FindFirstChild("Humanoid") and v:FindFirstChild("HumanoidRootPart") and v.Humanoid.Health > 0 then
+					elseif _G.Auto_Farm_Gun_Mastery and string.find(v.Name,QuestCheck()[3]) and (v.HumanoidRootPart.Position - PosMonMasteryGun.Position).Magnitude <= 225 and v:FindFirstChild("Humanoid") and v:FindFirstChild("HumanoidRootPart") and v.Humanoid.Health > 0 then
 						v.HumanoidRootPart.Size = Vector3.new(50,50,50)
 						v.Humanoid:ChangeState(14)
 						v.HumanoidRootPart.CanCollide = false
@@ -2570,7 +2570,7 @@ spawn(function()
 							v.Humanoid.Animator:Destroy()
 						end
 						sethiddenproperty(game:GetService("Players").LocalPlayer, "SimulationRadius", math.huge)
-					elseif v.Name == "Factory Staff [Lv. 800]" and (v.HumanoidRootPart.Position - PosMonMasteryFruit.Position).Magnitude <= 225 and v:FindFirstChild("Humanoid") and v:FindFirstChild("HumanoidRootPart") and v.Humanoid.Health > 0 then
+					elseif _G.Auto_Farm_BF_Mastery and v.Name == "Factory Staff [Lv. 800]" and (v.HumanoidRootPart.Position - PosMonMasteryFruit.Position).Magnitude <= 225 and v:FindFirstChild("Humanoid") and v:FindFirstChild("HumanoidRootPart") and v.Humanoid.Health > 0 then
 						v.HumanoidRootPart.Size = Vector3.new(50,50,50)
 						v.Humanoid:ChangeState(14)
 						v.HumanoidRootPart.CanCollide = false
@@ -2580,7 +2580,7 @@ spawn(function()
 							v.Humanoid.Animator:Destroy()
 						end
 						sethiddenproperty(game:GetService("Players").LocalPlayer, "SimulationRadius", math.huge)
-					elseif v.Name == QuestCheck()[3] and (v.HumanoidRootPart.Position - PosMonMasteryFruit.Position).Magnitude <= 225 and v:FindFirstChild("Humanoid") and v:FindFirstChild("HumanoidRootPart") and v.Humanoid.Health > 0 then
+					elseif _G.Auto_Farm_BF_Mastery and string.find(v.Name,QuestCheck()[3]) and (v.HumanoidRootPart.Position - PosMonMasteryFruit.Position).Magnitude <= 225 and v:FindFirstChild("Humanoid") and v:FindFirstChild("HumanoidRootPart") and v.Humanoid.Health > 0 then
 						v.HumanoidRootPart.Size = Vector3.new(50,50,50)
 						v.Humanoid:ChangeState(14)
 						v.HumanoidRootPart.CanCollide = false
