@@ -267,6 +267,8 @@ local function MakeDraggable(topbarobject, object)
 	)
 end
 
+_G.Color = Color3.fromRGB(40, 1, 140)
+
 local library = {}
 
 function library:Window(text,text2,text3,logo,keybind)
@@ -1690,7 +1692,6 @@ local Shop = SOMEXHUB:Tab("Shop",[[6031265976]])
 local DevilFruit = SOMEXHUB:Tab("Devil Fruit",[[7044233235]])
 local Misc = SOMEXHUB:Tab("Misc",[[6034509993]])
 
-_G.Color = Color3.fromRGB(40, 1, 140)
 _G.imgToggle = "6022668898"
 
 ------------------------------------------------------------------------------------------------------------------------------
