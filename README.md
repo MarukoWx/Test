@@ -326,6 +326,8 @@ Main:Toggle("Auto Farm Level",_G.imgToggle,false,function(value)
 	StopTween(_G.Auto_Farm_Level)
 end)
 
+MethodFarm = CFrame.new(0, 30, 0)
+
 spawn(function()
 	while wait() do
 		local MyLevel = game.Players.LocalPlayer.Data.Level.Value
